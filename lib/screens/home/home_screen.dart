@@ -215,7 +215,6 @@ class _HomeScreenState extends State<HomeScreen>
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        // h1RBH (1:38)
                         margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
                         constraints: const BoxConstraints(
                           maxWidth: 165,
@@ -332,7 +331,6 @@ class _HomeScreenState extends State<HomeScreen>
                         child: Stack(
                           children: [
                             const Positioned(
-                              // vector1V3R (1:23)
                               left: 0,
                               top: 83.351348877,
                               child: Align(
@@ -343,7 +341,8 @@ class _HomeScreenState extends State<HomeScreen>
                                       image: AssetImage('bg2.jpg'),
                                       width: 331.18,
                                       height: 11.79,
-                                    )),
+                                    )
+                                ),
                               ),
                             ),
                             Positioned(
