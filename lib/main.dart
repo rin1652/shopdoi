@@ -4,7 +4,8 @@ import 'package:petshop/screens/home/widgets/test_scrollview.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: Homepage(),
+    // home: Homepage(),
+    home: HomeScreen(),
     debugShowCheckedModeBanner: false,
   ));
 }

@@ -13,16 +13,15 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(414, 896),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (BuildContext context, Widget? child) {
         return Scaffold(
           body: Stack(
             children: [
-              Positioned(
-                left: 25,
-                top: 47,
+              Container(
+                padding: const EdgeInsets.fromLTRB(25, 47, double.minPositive, 22),
+                //margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 367,
                   height: 52,
@@ -40,10 +39,9 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                       Container(
-                        padding:
-                        const EdgeInsets.fromLTRB(21.21, 15, 21.21, 17.22),
+                        padding: const EdgeInsets.fromLTRB(21.21, 15, 21.21, 17.22),
                         width: 300,
-                        height: double.infinity,
+                        height: 52,
                         decoration: BoxDecoration(
                           color: const Color(0xfff1f2f2),
                           borderRadius: BorderRadius.circular(15),
@@ -204,195 +202,297 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ),
+              // Positioned(
+              //   left: 25,
+              //   top: 506,
+              //   child: SizedBox(
+              //     width: 506,
+              //     height: 36,
+              //     child: Row(
+              //       crossAxisAlignment: CrossAxisAlignment.center,
+              //       children: [
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
+              //           constraints: const BoxConstraints(
+              //             maxWidth: 165,
+              //           ),
+              //           child: const Text(
+              //             'Free puppy socialisation\nin store',
+              //             style: TextStyle(
+              //               fontSize: 16,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.125,
+              //               letterSpacing: 0.1000000015,
+              //               color: Color(0xff1d1d1b),
+              //             ),
+              //           ),
+              //         ),
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
+              //           constraints: const BoxConstraints(
+              //             maxWidth: 148,
+              //           ),
+              //           child: const Text(
+              //             'Eco-friendly toys your dog will love',
+              //             style: TextStyle(
+              //               fontSize: 16,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.125,
+              //               letterSpacing: 0.1000000015,
+              //               color: Color(0xff1d1d1b),
+              //             ),
+              //           ),
+              //         ),
+              //         Container(
+              //           constraints: const BoxConstraints(
+              //             maxWidth: 129,
+              //           ),
+              //           child: const Text(
+              //             'Parasite protection delivered monthly',
+              //             style: TextStyle(
+              //               fontSize: 16,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.125,
+              //               letterSpacing: 0.1000000015,
+              //               color: Color(0xff1d1d1b),
+              //             ),
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+              // Positioned(
+              //   left: 25,
+              //   top: 548.3975753784,
+              //   child: SizedBox(
+              //     width: 466,
+              //     height: 18.1,
+              //     child: Row(
+              //       crossAxisAlignment: CrossAxisAlignment.center,
+              //       children: [
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0, 159, 0.1),
+              //           child: const Text(
+              //             'FREE',
+              //             style: TextStyle(
+              //               fontSize: 12,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.2857142857,
+              //               color: Color(0xff7c7c7c),
+              //             ),
+              //           ),
+              //         ),
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0.1, 99, 0),
+              //           child: const Text(
+              //             'Shop Green Elk',
+              //             style: TextStyle(
+              //               fontSize: 12,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.2857142857,
+              //               color: Color(0xff7c7c7c),
+              //             ),
+              //           ),
+              //         ),
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0.1, 0, 0),
+              //           child: const Text(
+              //             'Shop Green Elk',
+              //             style: TextStyle(
+              //               fontSize: 12,
+              //               fontWeight: FontWeight.w400,
+              //               height: 1.2857142857,
+              //               color: Color(0xff7c7c7c),
+              //             ),
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+              // Positioned(
+              //   left: 13.818359375,
+              //   top: 316.0000610352,
+              //   child: SizedBox(
+              //     width: 561.57,
+              //     height: 178,
+              //     child: Row(
+              //       crossAxisAlignment: CrossAxisAlignment.center,
+              //       children: [
+              //         Container(
+              //           margin: const EdgeInsets.fromLTRB(0, 0, 14.67, 0),
+              //           width: 373.57,
+              //           height: double.infinity,
+              //           child: Stack(
+              //             children: [
+              //               const Positioned(
+              //                 left: 0,
+              //                 top: 83.351348877,
+              //                 child: Align(
+              //                   child: SizedBox(
+              //                       width: 331.18,
+              //                       height: 11.79,
+              //                       child: Image(
+              //                         image: AssetImage('bg2.jpg'),
+              //                         width: 331.18,
+              //                         height: 11.79,
+              //                       )
+              //                   ),
+              //                 ),
+              //               ),
+              //               Positioned(
+              //                 // rectangle33MrK (1:35)
+              //                 left: 11.2416992188,
+              //                 top: 0,
+              //                 child: Align(
+              //                   child: SizedBox(
+              //                     width: 173.33,
+              //                     height: 178,
+              //                     child: ClipRRect(
+              //                         borderRadius: BorderRadius.circular(18),
+              //                         child: const Image(
+              //                           image: AssetImage('dog2.jpg'),
+              //                         )),
+              //                   ),
+              //                 ),
+              //               ),
+              //               Positioned(
+              //                 left: 200.2416992188,
+              //                 top: 0,
+              //                 child: Align(
+              //                   child: SizedBox(
+              //                     width: 173.33,
+              //                     height: 178,
+              //                     child: ClipRRect(
+              //                         borderRadius: BorderRadius.circular(18),
+              //                         child: const Image(
+              //                           image: AssetImage('dog3.jpg'),
+              //                         )),
+              //                   ),
+              //                 ),
+              //               ),
+              //             ],
+              //           ),
+              //         ),
+              //         SizedBox(
+              //           width: 173.32,
+              //           height: 178,
+              //           child: ClipRRect(
+              //               borderRadius: BorderRadius.circular(18),
+              //               child: const Image(
+              //                 image: AssetImage('cat2.jpg'),
+              //               )),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+              Container(
+                padding: const EdgeInsets.fromLTRB(0, 300, double.minPositive, double.minPositive),
+                margin: const EdgeInsets.all(25),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(children: [
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
+                      constraints: const BoxConstraints(
+                        maxWidth: 148,
+                      ),
+                      child: Column(
+                        children:  const [
+                          Image(
+                            image: AssetImage('dog2.jpg'),
+                          ),
+                          Text(
+                            'Free puppy socialisation\nin store',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              height: 1.125,
+                              letterSpacing: 0.1000000015,
+                              color: Color(0xff1d1d1b),
+                            ),
+                          ),
+                          Text(
+                            'FREE',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                              height: 1.2857142857,
+                              color: Color(0xff7c7c7c),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
+                      constraints: const BoxConstraints(
+                        maxWidth: 148,
+                      ),
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage('dog3.jpg'),
+                          ),
+                          Text(
+                            'Eco-friendly toys your dog will love',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              height: 1.125,
+                              letterSpacing: 0.1000000015,
+                              color: Color(0xff1d1d1b),
+                            ),
+                          ),
+                          Text(
+                            'Shop Green Elk',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                              height: 1.2857142857,
+                              color: Color(0xff7c7c7c),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      constraints: const BoxConstraints(
+                        maxWidth: 148,
+                      ),
+                      child: Column(
+                        children: const [
+                          Image(
+                            image: AssetImage('cat2.jpg'),
+                          ),
+                          Text(
+                            'Parasite protection delivered monthly',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400,
+                              height: 1.125,
+                              letterSpacing: 0.1000000015,
+                              color: Color(0xff1d1d1b),
+                            ),
+                          ),
+                          Text(
+                            'Shop Green Elk',
+                            style: TextStyle(
+                              fontSize: 12,
+                              fontWeight: FontWeight.w400,
+                              height: 1.2857142857,
+                              color: Color(0xff7c7c7c),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]),
+                ),
+              ),
 
-              Positioned(
-                left: 25,
-                top: 506,
-                child: SizedBox(
-                  width: 506,
-                  height: 36,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
-                        constraints: const BoxConstraints(
-                          maxWidth: 165,
-                        ),
-                        child: const Text(
-                          'Free puppy socialisation\nin store',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            height: 1.125,
-                            letterSpacing: 0.1000000015,
-                            color: Color(0xff1d1d1b),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
-                        constraints: const BoxConstraints(
-                          maxWidth: 148,
-                        ),
-                        child: const Text(
-                          'Eco-friendly toys your dog will love',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            height: 1.125,
-                            letterSpacing: 0.1000000015,
-                            color: Color(0xff1d1d1b),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        constraints: const BoxConstraints(
-                          maxWidth: 129,
-                        ),
-                        child: const Text(
-                          'Parasite protection delivered monthly',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w400,
-                            height: 1.125,
-                            letterSpacing: 0.1000000015,
-                            color: Color(0xff1d1d1b),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 25,
-                top: 548.3975753784,
-                child: SizedBox(
-                  width: 466,
-                  height: 18.1,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 159, 0.1),
-                        child: const Text(
-                          'FREE',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2857142857,
-                            color: Color(0xff7c7c7c),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0.1, 99, 0),
-                        child: const Text(
-                          'Shop Green Elk',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2857142857,
-                            color: Color(0xff7c7c7c),
-                          ),
-                        ),
-                      ),
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0.1, 0, 0),
-                        child: const Text(
-                          'Shop Green Elk',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            height: 1.2857142857,
-                            color: Color(0xff7c7c7c),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-
-              Positioned(
-                left: 13.818359375,
-                top: 316.0000610352,
-                child: SizedBox(
-                  width: 561.57,
-                  height: 178,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 14.67, 0),
-                        width: 373.57,
-                        height: double.infinity,
-                        child: Stack(
-                          children: [
-                            const Positioned(
-                              left: 0,
-                              top: 83.351348877,
-                              child: Align(
-                                child: SizedBox(
-                                    width: 331.18,
-                                    height: 11.79,
-                                    child: Image(
-                                      image: AssetImage('bg2.jpg'),
-                                      width: 331.18,
-                                      height: 11.79,
-                                    )
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              // rectangle33MrK (1:35)
-                              left: 11.2416992188,
-                              top: 0,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 173.33,
-                                  height: 178,
-                                  child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(18),
-                                      child: const Image(
-                                        image: AssetImage('dog2.jpg'),
-                                      )),
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              left: 200.2416992188,
-                              top: 0,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 173.33,
-                                  height: 178,
-                                  child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(18),
-                                      child: const Image(
-                                        image: AssetImage('dog3.jpg'),
-                                      )),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      SizedBox(
-                        width: 173.32,
-                        height: 178,
-                        child: ClipRRect(
-                            borderRadius: BorderRadius.circular(18),
-                            child: const Image(
-                              image: AssetImage('cat2.jpg'),
-                            )),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              
               Positioned(
                 left: 24.7062988281,
                 top: 603,
@@ -430,135 +530,139 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ),
-              Positioned(
-                left: 25,
-                top: 652,
+              Container(
+                padding: EdgeInsets.fromLTRB(0, 630, double.minPositive, double.minPositive),
+                margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 550,
                   height: 81,
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 16, 0),
-                        padding: const EdgeInsets.fromLTRB(13, 5, 35.45, 0),
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          color: const Color(0x26f8a44c),
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(0, 0, 14.55, 0),
-                              width: 76,
-                              height: 70,
-                              child: const Image(
-                                image: AssetImage('dog1.jpg'),
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            Container(
-                              margin: const EdgeInsets.fromLTRB(0, 0, 0, 8),
-                              child: const Text(
-                                'Dog',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.2575,
-                                  color: Color(0xff3e423f),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          margin: const EdgeInsets.fromLTRB(0, 0, 16, 0),
+                          padding: const EdgeInsets.fromLTRB(13, 5, 35.45, 0),
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            color: const Color(0x26f8a44c),
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(0, 0, 14.55, 0),
+                                width: 76,
+                                height: 70,
+                                child: const Image(
+                                  image: AssetImage('dog1.jpg'),
+                                  fit: BoxFit.cover,
                                 ),
                               ),
-                            ),
-                          ],
+                              Container(
+                                margin: const EdgeInsets.fromLTRB(0, 0, 0, 8),
+                                child: const Text(
+                                  'Dog',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1.2575,
+                                    color: Color(0xff3e423f),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        // riceQ4b (1:16)
-                        margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
-                        width: 173,
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          color: const Color(0x2653b175),
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                        child: Stack(
-                          children: const [
-                            Positioned(
-                              left: 104.1569824219,
-                              top: 30.8571472168,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 28,
-                                  height: 26,
-                                  child: Text(
-                                    'Cat',
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w400,
-                                      height: 1.2575,
-                                      color: Color(0xff3d413f),
+                        Container(
+                          // riceQ4b (1:16)
+                          margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
+                          width: 173,
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            color: const Color(0x2653b175),
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                          child: Stack(
+                            children: const [
+                              Positioned(
+                                left: 104.1569824219,
+                                top: 30.8571472168,
+                                child: Align(
+                                  child: SizedBox(
+                                    width: 28,
+                                    height: 26,
+                                    child: Text(
+                                      'Cat',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w400,
+                                        height: 1.2575,
+                                        color: Color(0xff3d413f),
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              left: 0,
-                              top: 0,
-                              child: Align(
-                                child: SizedBox(
-                                  width: 173,
-                                  height: 81,
-                                  child: Image(
-                                    image: AssetImage('cat1.jpg'),
+                              Positioned(
+                                left: 0,
+                                top: 0,
+                                child: Align(
+                                  child: SizedBox(
                                     width: 173,
-                                    height: 70,
+                                    height: 81,
+                                    child: Image(
+                                      image: AssetImage('cat1.jpg'),
+                                      width: 173,
+                                      height: 70,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.fromLTRB(19.55, 12.26, 40.84, 14.1),
-                        width: 173,
-                        height: double.infinity,
-                        decoration: BoxDecoration(
-                          color: const Color(0x26535cb1),
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Container(
-                                margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
-                                child: const Image(
-                                  image: AssetImage('rice.jpg'),
-                                  fit: BoxFit.cover,
-                                )),
-                            Container(
-                              // cat4KV (1:21)
-                              margin: const EdgeInsets.fromLTRB(0, 8.55, 0, 0),
-                              child: const Text(
-                                'Rice',
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w400,
-                                  height: 1.2575,
-                                  color: Color(0xff3d413f),
+                        Container(
+                          padding: const EdgeInsets.fromLTRB(19.55, 12.26, 40.84, 14.1),
+                          width: 173,
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            color: const Color(0x26535cb1),
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                  margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
+                                  child: const Image(
+                                    image: AssetImage('rice.jpg'),
+                                    fit: BoxFit.cover,
+                                  )),
+                              Container(
+                                // cat4KV (1:21)
+                                margin: const EdgeInsets.fromLTRB(0, 8.55, 0, 0),
+                                child: const Text(
+                                  'Rice',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w400,
+                                    height: 1.2575,
+                                    color: Color(0xff3d413f),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),
+
               Positioned(
                 left: 0,
                 top: 774,
