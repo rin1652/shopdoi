@@ -225,9 +225,9 @@ class _HomeScreenState extends State<HomeScreen>
                             image: AssetImage('dog2.jpg'),
                           ),
                           Text(
-                            'Free puppy socialisation\nin store',
+                            'Free puppy socialisation in store',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 14,
                               fontWeight: FontWeight.w400,
                               height: 1.125,
                               letterSpacing: 0.1000000015,
@@ -259,7 +259,7 @@ class _HomeScreenState extends State<HomeScreen>
                           Text(
                             'Eco-friendly toys your dog will love',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 14,
                               fontWeight: FontWeight.w400,
                               height: 1.125,
                               letterSpacing: 0.1000000015,
@@ -290,7 +290,7 @@ class _HomeScreenState extends State<HomeScreen>
                           Text(
                             'Parasite protection delivered monthly',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 14,
                               fontWeight: FontWeight.w400,
                               height: 1.125,
                               letterSpacing: 0.1000000015,
@@ -315,7 +315,7 @@ class _HomeScreenState extends State<HomeScreen>
 
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    24.7062988281, 603, 34.29, double.minPositive),
+                    24.7062988281, 573, 34.29, double.minPositive),
                 child: SizedBox(
                   width: 378,
                   height: 31,
@@ -352,7 +352,7 @@ class _HomeScreenState extends State<HomeScreen>
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    0, 630, double.minPositive, double.minPositive),
+                    0, 600, double.minPositive, double.minPositive),
                 margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 550,
@@ -466,7 +466,6 @@ class _HomeScreenState extends State<HomeScreen>
                                     fit: BoxFit.cover,
                                   )),
                               Container(
-                                // cat4KV (1:21)
                                 margin:
                                     const EdgeInsets.fromLTRB(0, 8.55, 0, 0),
                                 child: const Text(
