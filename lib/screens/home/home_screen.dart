@@ -20,7 +20,8 @@ class _HomeScreenState extends State<HomeScreen>
           body: Stack(
             children: [
               Container(
-                padding: const EdgeInsets.fromLTRB(25, 47, double.minPositive, 22),
+                padding:
+                    const EdgeInsets.fromLTRB(25, 47, double.minPositive, double.minPositive),
                 //margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 367,
@@ -39,8 +40,9 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                       Container(
-                        padding: const EdgeInsets.fromLTRB(21.21, 15, 21.21, 17.22),
-                        width: 300,
+                        padding:
+                            const EdgeInsets.fromLTRB(21.21, 15, 21.21, 17.22),
+                        width: 280,
                         height: 52,
                         decoration: BoxDecoration(
                           color: const Color(0xfff1f2f2),
@@ -53,7 +55,8 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
-                                margin: const EdgeInsets.fromLTRB(0, 1.57, 15.97, 0),
+                                margin: const EdgeInsets.fromLTRB(
+                                    0, 1.57, 15.97, 0),
                                 width: 18.39,
                                 height: 18.21,
                                 child: const Icon(
@@ -78,26 +81,28 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ),
-              Positioned(
-                left:  24.7062988281,
-                top:  113,
+
+              Container(
+                padding: const EdgeInsets.fromLTRB(
+                    24.7062988281, 113, double.minPositive, double.minPositive),
                 child: Stack(
                   children: [
                     Positioned(
                       child: ClipRect(
                         child: Container(
-                          width: 367,
+                          width: 350,
                           height: 125,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: Container(
                             padding: const EdgeInsets.fromLTRB(
-                                189.29, 37, 45.71, 40.17),
+                                180.29, 37, 45.71, 40.17),
                             width: double.infinity,
                             height: double.infinity,
                             decoration: BoxDecoration(
-                              border: Border.all(color: const Color(0xfff2f3f2)),
+                              border:
+                                  Border.all(color: const Color(0xfff2f3f2)),
                               borderRadius: BorderRadius.circular(8),
                               gradient: const LinearGradient(
                                 begin: Alignment(-0.974, -0.939),
@@ -116,8 +121,8 @@ class _HomeScreenState extends State<HomeScreen>
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Container(
-                                    margin:
-                                    const EdgeInsets.fromLTRB(0, 0, 0, 3.83),
+                                    margin: const EdgeInsets.fromLTRB(
+                                        0, 0, 0, 3.83),
                                     child: const Text(
                                       'Canagan Dental',
                                       style: TextStyle(
@@ -133,8 +138,8 @@ class _HomeScreenState extends State<HomeScreen>
                                       'Get Up To 40% OFF',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontSize: 14 ,
-                                        fontWeight:  FontWeight.w400,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w400,
                                         color: Color(0xffffffff),
                                       ),
                                     ),
@@ -165,17 +170,17 @@ class _HomeScreenState extends State<HomeScreen>
                   ],
                 ),
               ),
-              Positioned(
-                left: 24.7062988281,
-                top: 267,
+              Container(
+                padding: const EdgeInsets.fromLTRB(
+                    24.7062988281, 267, 34.29, double.minPositive),
                 child: SizedBox(
-                  width: 358,
+                  width: 378,
                   height: 31,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 176, 0),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 136, 0),
                         child: const Text(
                           'Trending now',
                           style: TextStyle(
@@ -187,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 0, 1),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 0, double.minPositive),
                         child: const Text(
                           'See all',
                           style: TextStyle(
@@ -202,194 +207,9 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ),
-              // Positioned(
-              //   left: 25,
-              //   top: 506,
-              //   child: SizedBox(
-              //     width: 506,
-              //     height: 36,
-              //     child: Row(
-              //       crossAxisAlignment: CrossAxisAlignment.center,
-              //       children: [
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
-              //           constraints: const BoxConstraints(
-              //             maxWidth: 165,
-              //           ),
-              //           child: const Text(
-              //             'Free puppy socialisation\nin store',
-              //             style: TextStyle(
-              //               fontSize: 16,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.125,
-              //               letterSpacing: 0.1000000015,
-              //               color: Color(0xff1d1d1b),
-              //             ),
-              //           ),
-              //         ),
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
-              //           constraints: const BoxConstraints(
-              //             maxWidth: 148,
-              //           ),
-              //           child: const Text(
-              //             'Eco-friendly toys your dog will love',
-              //             style: TextStyle(
-              //               fontSize: 16,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.125,
-              //               letterSpacing: 0.1000000015,
-              //               color: Color(0xff1d1d1b),
-              //             ),
-              //           ),
-              //         ),
-              //         Container(
-              //           constraints: const BoxConstraints(
-              //             maxWidth: 129,
-              //           ),
-              //           child: const Text(
-              //             'Parasite protection delivered monthly',
-              //             style: TextStyle(
-              //               fontSize: 16,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.125,
-              //               letterSpacing: 0.1000000015,
-              //               color: Color(0xff1d1d1b),
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
-              // Positioned(
-              //   left: 25,
-              //   top: 548.3975753784,
-              //   child: SizedBox(
-              //     width: 466,
-              //     height: 18.1,
-              //     child: Row(
-              //       crossAxisAlignment: CrossAxisAlignment.center,
-              //       children: [
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0, 159, 0.1),
-              //           child: const Text(
-              //             'FREE',
-              //             style: TextStyle(
-              //               fontSize: 12,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.2857142857,
-              //               color: Color(0xff7c7c7c),
-              //             ),
-              //           ),
-              //         ),
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0.1, 99, 0),
-              //           child: const Text(
-              //             'Shop Green Elk',
-              //             style: TextStyle(
-              //               fontSize: 12,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.2857142857,
-              //               color: Color(0xff7c7c7c),
-              //             ),
-              //           ),
-              //         ),
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0.1, 0, 0),
-              //           child: const Text(
-              //             'Shop Green Elk',
-              //             style: TextStyle(
-              //               fontSize: 12,
-              //               fontWeight: FontWeight.w400,
-              //               height: 1.2857142857,
-              //               color: Color(0xff7c7c7c),
-              //             ),
-              //           ),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
-              // Positioned(
-              //   left: 13.818359375,
-              //   top: 316.0000610352,
-              //   child: SizedBox(
-              //     width: 561.57,
-              //     height: 178,
-              //     child: Row(
-              //       crossAxisAlignment: CrossAxisAlignment.center,
-              //       children: [
-              //         Container(
-              //           margin: const EdgeInsets.fromLTRB(0, 0, 14.67, 0),
-              //           width: 373.57,
-              //           height: double.infinity,
-              //           child: Stack(
-              //             children: [
-              //               const Positioned(
-              //                 left: 0,
-              //                 top: 83.351348877,
-              //                 child: Align(
-              //                   child: SizedBox(
-              //                       width: 331.18,
-              //                       height: 11.79,
-              //                       child: Image(
-              //                         image: AssetImage('bg2.jpg'),
-              //                         width: 331.18,
-              //                         height: 11.79,
-              //                       )
-              //                   ),
-              //                 ),
-              //               ),
-              //               Positioned(
-              //                 // rectangle33MrK (1:35)
-              //                 left: 11.2416992188,
-              //                 top: 0,
-              //                 child: Align(
-              //                   child: SizedBox(
-              //                     width: 173.33,
-              //                     height: 178,
-              //                     child: ClipRRect(
-              //                         borderRadius: BorderRadius.circular(18),
-              //                         child: const Image(
-              //                           image: AssetImage('dog2.jpg'),
-              //                         )),
-              //                   ),
-              //                 ),
-              //               ),
-              //               Positioned(
-              //                 left: 200.2416992188,
-              //                 top: 0,
-              //                 child: Align(
-              //                   child: SizedBox(
-              //                     width: 173.33,
-              //                     height: 178,
-              //                     child: ClipRRect(
-              //                         borderRadius: BorderRadius.circular(18),
-              //                         child: const Image(
-              //                           image: AssetImage('dog3.jpg'),
-              //                         )),
-              //                   ),
-              //                 ),
-              //               ),
-              //             ],
-              //           ),
-              //         ),
-              //         SizedBox(
-              //           width: 173.32,
-              //           height: 178,
-              //           child: ClipRRect(
-              //               borderRadius: BorderRadius.circular(18),
-              //               child: const Image(
-              //                 image: AssetImage('cat2.jpg'),
-              //               )),
-              //         ),
-              //       ],
-              //     ),
-              //   ),
-              // ),
               Container(
-                padding: const EdgeInsets.fromLTRB(0, 300, double.minPositive, double.minPositive),
+                padding: const EdgeInsets.fromLTRB(
+                    0, 300, double.minPositive, double.minPositive),
                 margin: const EdgeInsets.all(25),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -400,7 +220,7 @@ class _HomeScreenState extends State<HomeScreen>
                         maxWidth: 148,
                       ),
                       child: Column(
-                        children:  const [
+                        children: const [
                           Image(
                             image: AssetImage('dog2.jpg'),
                           ),
@@ -427,7 +247,7 @@ class _HomeScreenState extends State<HomeScreen>
                       ),
                     ),
                     Container(
-                      margin: const EdgeInsets.fromLTRB(0, 0, 40, 0),
+                      margin: const EdgeInsets.fromLTRB(0, 0, 24, 0),
                       constraints: const BoxConstraints(
                         maxWidth: 148,
                       ),
@@ -493,17 +313,17 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
 
-              Positioned(
-                left: 24.7062988281,
-                top: 603,
+              Container(
+                padding: const EdgeInsets.fromLTRB(
+                    24.7062988281, 603, 34.29, double.minPositive),
                 child: SizedBox(
-                  width: 358,
+                  width: 378,
                   height: 31,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 142, 0),
+                        margin: const EdgeInsets.fromLTRB(0, 0, 100, 0),
                         child: const Text(
                           'Browse pet types',
                           style: TextStyle(
@@ -531,7 +351,8 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
               Container(
-                padding: EdgeInsets.fromLTRB(0, 630, double.minPositive, double.minPositive),
+                padding: const EdgeInsets.fromLTRB(
+                    0, 630, double.minPositive, double.minPositive),
                 margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 550,
@@ -553,7 +374,8 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                margin: const EdgeInsets.fromLTRB(0, 0, 14.55, 0),
+                                margin:
+                                    const EdgeInsets.fromLTRB(0, 0, 14.55, 0),
                                 width: 76,
                                 height: 70,
                                 child: const Image(
@@ -625,7 +447,8 @@ class _HomeScreenState extends State<HomeScreen>
                           ),
                         ),
                         Container(
-                          padding: const EdgeInsets.fromLTRB(19.55, 12.26, 40.84, 14.1),
+                          padding: const EdgeInsets.fromLTRB(
+                              19.55, 12.26, 40.84, 14.1),
                           width: 173,
                           height: double.infinity,
                           decoration: BoxDecoration(
@@ -636,14 +459,16 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                  margin: const EdgeInsets.fromLTRB(0, 0, 15, 0),
+                                  margin:
+                                      const EdgeInsets.fromLTRB(0, 0, 15, 0),
                                   child: const Image(
                                     image: AssetImage('rice.jpg'),
                                     fit: BoxFit.cover,
                                   )),
                               Container(
                                 // cat4KV (1:21)
-                                margin: const EdgeInsets.fromLTRB(0, 8.55, 0, 0),
+                                margin:
+                                    const EdgeInsets.fromLTRB(0, 8.55, 0, 0),
                                 child: const Text(
                                   'Rice',
                                   style: TextStyle(
@@ -663,9 +488,9 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
 
-              Positioned(
-                left: 0,
-                top: 774,
+              Container(
+                padding: const EdgeInsets.fromLTRB(
+                    0, 774, double.minPositive, double.minPositive),
                 child: Container(
                   width: 414,
                   height: 92,
@@ -696,8 +521,9 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                // store1XUX (1:60)
-                                  margin: const EdgeInsets.fromLTRB(1, 0, 0, 5.17),
+                                  // store1XUX (1:60)
+                                  margin:
+                                      const EdgeInsets.fromLTRB(1, 0, 0, 5.17),
                                   width: 20,
                                   height: 20,
                                   child: const Icon(
@@ -727,7 +553,8 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                  margin: const EdgeInsets.fromLTRB(1, 0, 0, 5.24),
+                                  margin:
+                                      const EdgeInsets.fromLTRB(1, 0, 0, 5.24),
                                   width: 28.35,
                                   height: 18.21,
                                   child: const Icon(
@@ -758,13 +585,13 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 4.89),
+                                  margin:
+                                      const EdgeInsets.fromLTRB(0, 0, 0, 4.89),
                                   width: 22.8,
                                   height: 19.6,
                                   child: const Icon(
                                     Icons.favorite_border,
-                                  )
-                              ),
+                                  )),
                               const Text(
                                 'Favourite',
                                 textAlign: TextAlign.center,
@@ -772,7 +599,7 @@ class _HomeScreenState extends State<HomeScreen>
                                   fontSize: 10,
                                   fontWeight: FontWeight.w400,
                                   height: 1.2575,
-                                  color: Colors.white,
+                                  color: Colors.black,
                                 ),
                               ),
                             ],
@@ -790,13 +617,13 @@ class _HomeScreenState extends State<HomeScreen>
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                  margin: const EdgeInsets.fromLTRB(0, 0, 1, 5.17),
+                                  margin:
+                                      const EdgeInsets.fromLTRB(0, 0, 1, 5.17),
                                   width: 16.04,
                                   height: 20,
                                   child: const Icon(
                                     Icons.account_circle_outlined,
-                                  )
-                              ),
+                                  )),
                               const Text(
                                 'Account',
                                 textAlign: TextAlign.center,
