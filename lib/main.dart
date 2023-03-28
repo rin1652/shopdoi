@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:petshop/screens/home/home_screen.dart';
-import 'package:petshop/screens/home/widgets/test_scrollview.dart';
 
 void main() {
   runApp(const MaterialApp(
