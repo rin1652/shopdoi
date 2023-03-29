@@ -22,17 +22,23 @@ class _HomeScreenState extends State<HomeScreen>
       splitScreenMode: true,
       builder: (BuildContext context, Widget? child) {
         return Scaffold(
-          body: Stack(
-            children: [
-              seachWidget(),
-              banderWidget(),
-              StatusTrending(),
-              listTrend(),
-              BrowseStatus(),
-              browseList(),
-              browseList2(),
-              bottom(),
-            ],
+          body: SingleChildScrollView(
+            child: Column(
+              children: [
+                Stack(
+                  children: [
+                    seachWidget(),
+                    banderWidget(),
+                    StatusTrending(),
+                    listTrend(),
+                    BrowseStatus(),
+                    browseList(),
+                    browseList2(),
+                    bottom(),
+                  ],
+                ),
+              ],
+            ),
           ),
         );
       },
