@@ -21,56 +21,56 @@ class _HomeScreenState extends State<HomeScreen>
             children: [
               Container(
                 padding:
-                    const EdgeInsets.fromLTRB(25, 47, double.minPositive, double.minPositive),
+                    const EdgeInsets.fromLTRB(10, 47, 0, 0),
                 //margin: const EdgeInsets.all(25),
                 child: SizedBox(
-                  width: 367,
-                  height: 52,
+                  width: 414.w,
+                  height: 52.h,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
                         margin: const EdgeInsets.fromLTRB(0, 1.9, 22, 0),
-                        width: 45,
-                        height: 31.9,
-                        child: const Image(
-                          image: AssetImage('logo.jpg'),
-                          width: 45,
-                          height: 31.9,
+                        width: 45.w,
+                        height: 31.9.h,
+                        child: Image(
+                          image: const AssetImage('assets/images/logo.jpg'),
+                          width: 45.w,
+                          height: 31.9.h,
                         ),
                       ),
                       Container(
                         padding:
-                            const EdgeInsets.fromLTRB(21.21, 15, 21.21, 17.22),
-                        width: 280,
-                        height: 52,
+                            const EdgeInsets.fromLTRB(10, 15, 21.21, 10),
+                        width: 273.w,
+                        height: 52.h,
                         decoration: BoxDecoration(
                           color: const Color(0xfff1f2f2),
                           borderRadius: BorderRadius.circular(15),
                         ),
                         child: SizedBox(
-                          width: 177.36,
+                          width: 177.36.w,
                           height: double.infinity,
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Container(
                                 margin: const EdgeInsets.fromLTRB(
-                                    0, 1.57, 15.97, 0),
-                                width: 18.39,
-                                height: 18.21,
+                                    0, 1.57, 15.97, double.minPositive),
+                                width: 18.39.w,
+                                height: 18.21.h,
                                 child: const Icon(
                                   Icons.search,
                                   color: Colors.black,
                                 ),
                               ),
-                              const Text(
+                              Text(
                                 'Search Product or Brand',
                                 style: TextStyle(
-                                  fontSize: 14,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w400,
-                                  height: 1.2575,
-                                  color: Color(0xff7c7c7c),
+                                  height: 1.2575.h,
+                                  color: const Color(0xff7c7c7c),
                                 ),
                               )
                             ],
@@ -84,26 +84,26 @@ class _HomeScreenState extends State<HomeScreen>
 
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    24.7062988281, 113, double.minPositive, double.minPositive),
+                    24.71, 140, 22.29, double.minPositive),
                 child: Stack(
                   children: [
                     Positioned(
                       child: ClipRect(
                         child: Container(
-                          width: 350,
-                          height: 125,
+                          width: 367.w,
+                          height: 125.h,
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(8),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Container(
                             padding: const EdgeInsets.fromLTRB(
-                                180.29, 37, 45.71, 40.17),
+                                180.29, 37, 30, 40.17),
                             width: double.infinity,
                             height: double.infinity,
                             decoration: BoxDecoration(
                               border:
                                   Border.all(color: const Color(0xfff2f3f2)),
-                              borderRadius: BorderRadius.circular(8),
+                              borderRadius: BorderRadius.circular(15),
                               gradient: const LinearGradient(
                                 begin: Alignment(-0.974, -0.939),
                                 end: Alignment(0.977, 1.009),
@@ -122,25 +122,25 @@ class _HomeScreenState extends State<HomeScreen>
                                 children: [
                                   Container(
                                     margin: const EdgeInsets.fromLTRB(
-                                        0, 0, 0, 3.83),
-                                    child: const Text(
+                                        0, 0, 0, 0),
+                                    child: Text(
                                       'Canagan Dental',
                                       style: TextStyle(
-                                        fontSize: 14,
+                                        fontSize: 16.sp,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2575,
-                                        color: Color(0xff030303),
+                                        color: const Color(0xff030303),
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(
+                                  SizedBox(
                                     child: Text(
                                       'Get Up To 40% OFF',
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        fontSize: 14,
+                                        fontSize: 14.sp,
                                         fontWeight: FontWeight.w400,
-                                        color: Color(0xffffffff),
+                                        color: const Color(0xffffffff),
                                       ),
                                     ),
                                   ),
@@ -151,16 +151,16 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                     ),
-                    const Positioned(
-                      left: 0,
+                    Positioned(
+                      left: -15,
                       top: -25,
                       child: Align(
                         child: SizedBox(
-                          width: 367,
-                          height: 148,
-                          child: Image(
+                          width: 367.w,
+                          height: 148.h,
+                          child: const Image(
                             image: AssetImage(
-                              'bg1.jpg',
+                              'assets/images/bg1.jpg',
                             ),
                             fit: BoxFit.cover,
                           ),
@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen>
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    24.7062988281, 267, 34.29, double.minPositive),
+                    24.7062988281, 317, 34.29, double.minPositive),
                 child: SizedBox(
                   width: 378,
                   height: 31,
@@ -192,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen>
                         ),
                       ),
                       Container(
-                        margin: const EdgeInsets.fromLTRB(0, 0, 0, double.minPositive),
+                        margin: const EdgeInsets.fromLTRB(10, 0, 0, double.minPositive),
                         child: const Text(
                           'See all',
                           style: TextStyle(
@@ -209,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen>
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    0, 300, double.minPositive, double.minPositive),
+                    0, 337, 0, double.minPositive),
                 margin: const EdgeInsets.all(25),
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -220,11 +220,21 @@ class _HomeScreenState extends State<HomeScreen>
                         maxWidth: 148,
                       ),
                       child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('dog2.jpg'),
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: const Image(
+                                image: AssetImage('assets/images/dog2.jpg'),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
-                          Text(
+                          const Text(
                             'Free puppy socialisation in store',
                             style: TextStyle(
                               fontSize: 14,
@@ -234,13 +244,16 @@ class _HomeScreenState extends State<HomeScreen>
                               color: Color(0xff1d1d1b),
                             ),
                           ),
-                          Text(
-                            'FREE',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              height: 1.2857142857,
-                              color: Color(0xff7c7c7c),
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 5, 105, 0),
+                            child: const Text(
+                              'FREE',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                height: 1.2857142857,
+                                color: Color(0xff7c7c7c),
+                              ),
                             ),
                           ),
                         ],
@@ -252,11 +265,20 @@ class _HomeScreenState extends State<HomeScreen>
                         maxWidth: 148,
                       ),
                       child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('dog3.jpg'),
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: const Image(
+                                image: AssetImage('assets/images/dog3.jpg'),
+                              ),
+                            ),
                           ),
-                          Text(
+                          const Text(
                             'Eco-friendly toys your dog will love',
                             style: TextStyle(
                               fontSize: 14,
@@ -266,13 +288,17 @@ class _HomeScreenState extends State<HomeScreen>
                               color: Color(0xff1d1d1b),
                             ),
                           ),
-                          Text(
-                            'Shop Green Elk',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              height: 1.2857142857,
-                              color: Color(0xff7c7c7c),
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 5, 55, 0),
+                            child: const Text(
+                              'Shop Green Elk',
+                              textAlign: TextAlign.left,
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                height: 1.2857142857,
+                                color: Color(0xff7c7c7c),
+                              ),
                             ),
                           ),
                         ],
@@ -283,11 +309,20 @@ class _HomeScreenState extends State<HomeScreen>
                         maxWidth: 148,
                       ),
                       child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('cat2.jpg'),
+                        children: [
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(15),
+                              child: const Image(
+                                image: AssetImage('assets/images/cat2.jpg'),
+                              ),
+                            ),
                           ),
-                          Text(
+                          const Text(
                             'Parasite protection delivered monthly',
                             style: TextStyle(
                               fontSize: 14,
@@ -297,13 +332,16 @@ class _HomeScreenState extends State<HomeScreen>
                               color: Color(0xff1d1d1b),
                             ),
                           ),
-                          Text(
-                            'Shop Green Elk',
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              height: 1.2857142857,
-                              color: Color(0xff7c7c7c),
+                          Container(
+                            margin: const EdgeInsets.fromLTRB(0, 5, 55, 0),
+                            child: const Text(
+                              'Shop Green Elk',
+                              style: TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                height: 1.2857142857,
+                                color: Color(0xff7c7c7c),
+                              ),
                             ),
                           ),
                         ],
@@ -315,7 +353,7 @@ class _HomeScreenState extends State<HomeScreen>
 
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    24.7062988281, 573, 34.29, double.minPositive),
+                    24.7062988281, 603, 34.29, double.minPositive),
                 child: SizedBox(
                   width: 378,
                   height: 31,
@@ -352,7 +390,7 @@ class _HomeScreenState extends State<HomeScreen>
               ),
               Container(
                 padding: const EdgeInsets.fromLTRB(
-                    0, 600, double.minPositive, double.minPositive),
+                    0, 630, double.minPositive, double.minPositive),
                 margin: const EdgeInsets.all(25),
                 child: SizedBox(
                   width: 550,
@@ -379,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 width: 76,
                                 height: 70,
                                 child: const Image(
-                                  image: AssetImage('dog1.jpg'),
+                                  image: AssetImage('assets/images/dog1.jpg'),
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -388,7 +426,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 child: const Text(
                                   'Dog',
                                   style: TextStyle(
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.w400,
                                     height: 1.2575,
                                     color: Color(0xff3e423f),
@@ -419,7 +457,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     child: Text(
                                       'Cat',
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w400,
                                         height: 1.2575,
                                         color: Color(0xff3d413f),
@@ -436,7 +474,7 @@ class _HomeScreenState extends State<HomeScreen>
                                     width: 173,
                                     height: 81,
                                     child: Image(
-                                      image: AssetImage('cat1.jpg'),
+                                      image: AssetImage('assets/images/cat1.jpg'),
                                       width: 173,
                                       height: 70,
                                     ),
@@ -462,7 +500,7 @@ class _HomeScreenState extends State<HomeScreen>
                                   margin:
                                       const EdgeInsets.fromLTRB(0, 0, 15, 0),
                                   child: const Image(
-                                    image: AssetImage('rice.jpg'),
+                                    image: AssetImage('assets/images/rice.jpg'),
                                     fit: BoxFit.cover,
                                   )),
                               Container(
@@ -471,7 +509,7 @@ class _HomeScreenState extends State<HomeScreen>
                                 child: const Text(
                                   'Rice',
                                   style: TextStyle(
-                                    fontSize: 18,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.w400,
                                     height: 1.2575,
                                     color: Color(0xff3d413f),
